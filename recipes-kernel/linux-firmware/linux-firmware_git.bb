@@ -207,3 +207,5 @@ python populate_packages_prepend () {
     firmware_pkgs = oe.utils.packages_filter_out_system(d)
     d.appendVar('RDEPENDS_linux-firmware', ' ' + ' '.join(firmware_pkgs))
 }
+
+COMPATIBLE_MACHINE = "(var-som-mx6|zp-wa-0v1)"
